@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+body{
+	background: #1D212B;
+}
+
+section{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section:nth-child(1){
+	color: #fff;
+}
+
+section:nth-child(2){
+
+	color: #1D212B;
+	background: #fff;
+}
+
+section:nth-child(3){
+
+	color: #fff;
+}
+
+section:nth-child(4){
+
+	color: #1D212B;
+	background: #fff;
+}
+
+
+
+	section .container{
+		margin:100px;
+	}
+
+	section h1{
+		font-size: 60px;
+	}
+
+	section h2{
+		font-size: 40px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	section .cards{
+		display: flex;
+	}
+
+	section .cards .text-card{
+		background: #2696E9;
+		margin: 20px;
+		padding: 20px;
+	}
+
+	section .cards .text-card h3{
+		font-size: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	.reveal {
+	position: relative;
+	transform: translateY(250px);
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+/*
+$(document).ready(function(){
+  //Take your div into one js variable
+  var div = $("#story-hide");
+    var div2 = $("#gmv");
+    var div3 = $("#ach-hold");
+
+  //Take the current position (vertical position from top) of your div in the variable
+  var pos = div.last().offset();
+  //Now when scroll event trigger do following
+  $(window).scroll(function () {
+   var windowpos = $(window).scrollTop();
+   //Now if you scroll more than 100 pixels vertically change the class to AfterScroll
+   // I am taking 100px scroll, you can take whatever you need
+
+   if (windowpos >= 250) {
+    div.removeClass("story");
+     div.addClass("story-show");
+   } 
+
+    if (windowpos >= 450) {
+    div2.removeClass("gmv-hide");
+     div2.addClass("gmv-show");
+   }
+
+   if (windowpos >= 850) {
+    div3.removeClass("ach-hide");
+     div3.addClass("ach-show");
+   }
+
+
+   //If scroll is less than 100px, remove the class AfterScroll so that your content will be hidden again 
+   // else {
+   //   s.removeClass("story-show");
+   // }
+   //Note: If you want the content should be shown always once you scroll and do not want to hide it again when go to top agian, no need to write the else part
+ });
+
+});
+*/
